@@ -84,6 +84,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\kenny\source\repos\alpha\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\kenny\source\repos\alpha\deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -108,6 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\kenny\source\repos\alpha\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -134,12 +136,22 @@
   <ItemGroup>
     <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="display.cpp" />
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="glad.c" />
+    <ClCompile Include="resource_manager.cpp" />
     <ClCompile Include="shader.cpp" />
+    <ClCompile Include="sprite_renderer.cpp" />
+    <ClCompile Include="texture2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h" />
+    <ClInclude Include="filesystem.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="resource_manager.h" />
     <ClInclude Include="shader.h" />
+    <ClInclude Include="sprite_renderer.h" />
+    <ClInclude Include="texture2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

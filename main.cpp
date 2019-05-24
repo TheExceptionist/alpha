@@ -1,4 +1,5 @@
 #include "display.h"
+#include "game.h"
 
 #include <iostream>
 
@@ -16,9 +17,21 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
+	Game game(WINDOW_WIDTH, WINDOW_HEIGHT);
+
+	if (!game.init())
+	{
+		std::cout << "Game could not start!\nStopping..." << std::endl;
+		return -1;
+	}
 
 	while (display.isRunning())
 	{
+		game.update();
+
+		display.clear();
+		game.render();
+		
 		display.update();
 	}
 

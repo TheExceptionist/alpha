@@ -17,6 +17,8 @@ public:
 
 	bool init();
 	void close();
+
+	void clear();
 	void update();
 
 	bool isRunning() const { return !glfwWindowShouldClose(m_window); }

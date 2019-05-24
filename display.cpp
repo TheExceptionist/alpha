@@ -48,11 +48,14 @@ void Display::close()
 	glfwTerminate();
 }
 
-void Display::update()
+void Display::clear()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
+}
 
+void Display::update()
+{
 	glfwSwapBuffers(m_window);
 	glfwPollEvents();
 }

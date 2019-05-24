@@ -8,6 +8,20 @@
     <ClCompile Include="display.cpp">
       <Filter>display</Filter>
     </ClCompile>
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="resource_manager.cpp">
+      <Filter>managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="texture2D.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="filesystem.cpp">
+      <Filter>managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="display">
@@ -16,10 +30,30 @@
     <Filter Include="libfiles">
       <UniqueIdentifier>{f6be2868-d633-4e83-9010-aa9507f3b430}</UniqueIdentifier>
     </Filter>
+    <Filter Include="managers">
+      <UniqueIdentifier>{60b0b762-1e6b-4686-a7e2-acbb087232d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering">
+      <UniqueIdentifier>{b5f8a55d-0a48-4a0e-ac9b-95de104f9412}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h">
       <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="resource_manager.h">
+      <Filter>managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="texture2D.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="filesystem.h">
+      <Filter>managers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
