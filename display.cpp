@@ -37,6 +37,7 @@ bool Display::init()
 		}
 
 		glViewport(0, 0, m_width, m_height);
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	}
 
 	return success;

@@ -22,6 +22,12 @@
     <ClCompile Include="filesystem.cpp">
       <Filter>managers</Filter>
     </ClCompile>
+    <ClCompile Include="error_checker.cpp">
+      <Filter>managers</Filter>
+    </ClCompile>
+    <ClCompile Include="text_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="display">
@@ -54,6 +60,12 @@
     <ClInclude Include="game.h" />
     <ClInclude Include="filesystem.h">
       <Filter>managers</Filter>
+    </ClInclude>
+    <ClInclude Include="error_checker.h">
+      <Filter>managers</Filter>
+    </ClInclude>
+    <ClInclude Include="text_renderer.h">
+      <Filter>rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

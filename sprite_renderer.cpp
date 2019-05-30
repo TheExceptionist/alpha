@@ -28,7 +28,7 @@ void SpriteRenderer::drawSprite(Texture2D & texture, glm::vec2 position, glm::ve
 	model = glm::scale(model, glm::vec3(size, 1.0f));
 	
 	this->m_shader.setMatrix4("model", model);
-	//this->m_shader.setVector3f("spriteColor", color);
+	this->m_shader.setVector3f("spriteColor", color);
 
 	glActiveTexture(GL_TEXTURE0);
 	texture.bind();

@@ -37,6 +37,8 @@ bool Game::init()
 
 	ResourceManager::loadTexture("display-box.png", "display_box_1");
 
+	ResourceManager::loadCharset();
+
 	renderer = new SpriteRenderer(ResourceManager::getShader("sprite"));
 
 	return success;
@@ -52,5 +54,7 @@ void Game::close()
 
 void Game::render()
 {
-	renderer->drawSprite(ResourceManager::getTexture("dialog_box_1"), glm::vec2(0, 0), glm::vec2(50, 50), 0.0f, glm::vec3(0.0f, 0.0f, 0.0f));
+	renderer->drawSprite(ResourceManager::getTexture("display_box_1"), glm::vec2(0, 0), glm::vec2(50, 50), 0.0f);
+	renderer->drawSprite(ResourceManager::getChar(CHAR_A), glm::vec2(60, 60), glm::vec2(16, 16), 0.0f);
+	renderer->drawSprite(ResourceManager::getChar(CHAR_C), glm::vec2(75, 60), glm::vec2(16, 16), 0.0f);
 }

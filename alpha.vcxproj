@@ -136,6 +136,7 @@
   <ItemGroup>
     <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="display.cpp" />
+    <ClCompile Include="error_checker.cpp" />
     <ClCompile Include="filesystem.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="glad.c" />
@@ -143,15 +144,18 @@
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="sprite_renderer.cpp" />
     <ClCompile Include="texture2D.cpp" />
+    <ClCompile Include="text_renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h" />
+    <ClInclude Include="error_checker.h" />
     <ClInclude Include="filesystem.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="sprite_renderer.h" />
     <ClInclude Include="texture2D.h" />
+    <ClInclude Include="text_renderer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,11 @@
 #include "display.h"
 #include "game.h"
+#include "error_checker.h"
 
 #include <iostream>
 
-static const int WINDOW_WIDTH = 800;
-static const int WINDOW_HEIGHT = 600;
+static const int WINDOW_WIDTH = 960;
+static const int WINDOW_HEIGHT = 720;
 static const char* TITLE_NAME = "Alpha32.exe";
 
 int main(int argc, char* argv[])
@@ -31,6 +32,12 @@ int main(int argc, char* argv[])
 
 		display.clear();
 		game.render();
+
+		if (ErrorChecker::checkError(ERROR_GL))
+		{
+			std::cout << "########################## ERROR ##########################" << std::endl;
+			ErrorChecker::printErrorInfo();
+		}
 		
 		display.update();
 	}
